@@ -7,5 +7,5 @@ export function isPaystackConfigured(): boolean {
 }
 
 export function getPaystackPublicKey(): string {
-  return process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY ?? PLACEHOLDER_PUBLIC_KEY;
+  return process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || PLACEHOLDER_PUBLIC_KEY;
 }
